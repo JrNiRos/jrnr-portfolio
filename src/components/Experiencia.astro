@@ -1,0 +1,38 @@
+---
+import ExperienciaItem from "./ExperienciaItem.astro"
+
+const EXPERIENCIA =[
+    {
+        title: "Desarrollador FullStack - Grupo Oro",
+        description: "Participé durante 3 meses en el desarrollo de proyectos de web scraping y aplicaciones web, utilizando tecnologías como Django, WordPress y Laravel, colaborando en la automatización y extracción de datos para distintas soluciones digitales.",
+        date: "15/09/2025 - 20/11/2025 (3 meses)",
+    },
+    {
+        title: "Desarrollador de Addons - Minecraft (Java)",
+        description: "Desarrollo de addons para Minecraft en Java y Modelaje 3D en BlockBench.",
+        date: "2022 - ACTUALIDAD",
+        link: "https://mcmodels.net/vendors/203/glitchs-studio"
+    },
+    {
+        title: "Desarrollador Web - Grado Superior",
+        description: "Formación académica en Desarrollo de Aplicaciones Web.",
+        date: "2023 - 2025"
+    },
+    {
+        title: "Inglés B1 - Escuela Oficial de Idiomas",
+        description: "Obtención del certificado B1 en Inglés (Cambridge).",
+        date: "2020"
+    }
+
+    
+]
+---
+<ol class="relative border-s border-default">
+    {
+        EXPERIENCIA.map((experiencia) => (
+            <li class="mb-10 ms-4">
+            <ExperienciaItem {...experiencia} />
+            </li>
+        ))
+    }
+</ol>

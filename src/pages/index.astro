@@ -6,12 +6,14 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
 import Redes from "../components/Redes.astro";
+import Experiencia from "../components/Experiencia.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Layout title="Portfolio de Jose Raimundo Nieves Rosa - Desarrollador, Programador Web y Modelador 3D">
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<h1
@@ -32,9 +34,18 @@ import Redes from "../components/Redes.astro";
 				Ubicado en Sevilla, España. Especializado en el Desarrollo Web y
 				crear soluciones digitales.
 			</h2>
+
 			<nav class="flex justify-center items-center gap-x-2 py-3">
 				<Redes />
 			</nav>
+
+			<SectionContainer id="experiencia" class=" py-1">	
+			<nav class="gap-x-1 py-10">
+				<h2 class=" flex items-center text-3xl font-semibold ">Experiencia y Formación</h2>
+				<Experiencia class="flex justify-center items-center" />
+			</nav>
+			</SectionContainer>
+
 		</section>
 	</main>
 </Layout>
