@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+import Badge from '../components/Badge.astro';
 import Header from '../components/Header.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
@@ -8,6 +10,22 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Header />
-	<Welcome />
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<h1 class="text-white text-5xl font-bold flex items-center gap-x-4 pb-2">
+			Hola, soy Jose! 
+			<a href="https://www.linkedin.com/in/jose-raimundo-nieves-rosa-599215384/"
+			   target="_blank"
+			   rel="noopener noreferrer"
+			   class="flex justify-center items-center">
+				<Badge> Disponible para trabajar!</Badge>
+			</a>
+		</h1>
+		<h2 class="text-2xl opacity-80 text-wrap">
+			Recién graduado. Desarrollador y Modelador 3D en BlockBench. 
+			Ubicado en Sevilla, España. Especializado en el Desarrollo Web 
+			y crear soluciones digitales.
+		</h2>
+		</section>
+	</main>
 </Layout>
