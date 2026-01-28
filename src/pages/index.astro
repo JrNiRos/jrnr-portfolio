@@ -1,9 +1,11 @@
 ---
 import "../styles/global.css";
-import Badge from '../components/Badge.astro';
-import Header from '../components/Header.astro';
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Badge from "../components/Badge.astro";
+import Header from "../components/Header.astro";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import Redes from "../components/Redes.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -12,20 +14,27 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
-		<h1 class="text-white text-5xl font-bold flex items-center gap-x-4 pb-2">
-			Hola, soy Jose! 
-			<a href="https://www.linkedin.com/in/jose-raimundo-nieves-rosa-599215384/"
-			   target="_blank"
-			   rel="noopener noreferrer"
-			   class="flex justify-center items-center">
-				<Badge> Disponible para trabajar!</Badge>
-			</a>
-		</h1>
-		<h2 class="text-2xl opacity-80 text-wrap">
-			Recién graduado. Desarrollador y Modelador 3D en BlockBench. 
-			Ubicado en Sevilla, España. Especializado en el Desarrollo Web 
-			y crear soluciones digitales.
-		</h2>
+			<h1
+				class="text-white text-5xl font-bold flex items-center gap-x-4 pb-2"
+			>
+				Hola, soy Jose!
+				<a
+					href="https://www.linkedin.com/in/jose-raimundo-nieves-rosa-599215384/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge> Disponible para trabajar!</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80 text-wrap">
+				Recién graduado. Desarrollador y Modelador 3D en BlockBench.
+				Ubicado en Sevilla, España. Especializado en el Desarrollo Web y
+				crear soluciones digitales.
+			</h2>
+			<nav class="flex justify-center items-center gap-x-2 ">
+				<Redes />
+			</nav>
 		</section>
 	</main>
 </Layout>
