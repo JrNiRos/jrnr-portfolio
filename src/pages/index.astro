@@ -10,6 +10,7 @@ import Experiencia from "../components/Experiencia.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Code from "../components/icons/Code.astro";
 import Suitcase from "../components/icons/Suitcase.astro";
+import Proyectos from "../components/Proyectos.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -19,7 +20,7 @@ import Suitcase from "../components/icons/Suitcase.astro";
 	title="Portfolio de Jose Raimundo Nieves Rosa - Desarrollador, Programador Web y Modelador 3D"
 >
 	<main class="px-4">
-		<section class="w-full max-w-4xl mx-auto py-44">
+		<section class="w-full max-w-4xl mx-auto py-34">
 			<!-- esto para q en pantallas mas grande se escale mejor -->
 			<h1
 				class="text-white md:text-3xl lg:text-4xl font-bold flex items-center gap-x-4 pb-2"
@@ -40,12 +41,14 @@ import Suitcase from "../components/icons/Suitcase.astro";
 				crear soluciones digitales.
 			</h2>
 
-			<nav class="flex justify-center items-center flex-wrap gap-2 py-4 px-4">
+			<nav
+				class="flex justify-center items-center flex-wrap gap-2 py-4 px-4"
+			>
 				<Redes />
 			</nav>
 
 			<SectionContainer id="experiencia" class="py-1">
-				<nav class="gap-x-1 py-10">
+				<nav class="gap-x-1 py-8">
 					<h2 class="flex items-center text-3xl font-semibold">
 						<Suitcase class="me-2" />
 						Experiencia y Formación
@@ -55,12 +58,50 @@ import Suitcase from "../components/icons/Suitcase.astro";
 			</SectionContainer>
 
 			<SectionContainer id="proyectos" class="py-1">
-				<nav class="gap-x-1 py-10">
-					<h2 class="flex items-center text-3xl font-semibold">
+				<nav class="gap-x-1 py-8">
+					<h2 class="flex items-center text-3xl font-semibold py-10">
 						<Code class="me-2" />
 						Proyectos
 					</h2>
-					<Experiencia class="flex justify-center items-center" />
+					<Proyectos
+						class="flex justify-center items-center py-4 mt-8"
+					/>
+				</nav>
+			</SectionContainer>
+
+			<SectionContainer id="sobremi" class="py-16">
+				<nav class="gap-x-1">
+					<h1
+						class="text-white text-3xl font-bold flex items-center gap-x-4 pb-2 "
+					>
+						Te cuento un poco mas sobre mi...
+					</h1>
+					<p
+						class="text-base sm:text-xl opacity-80 text-wrap max-w-full pb-4 py-4"
+					>
+						Soy desarrollador Full Stack con experiencia en la
+						creación de aplicaciones web completas, desde el diseño
+						de la lógica del servidor hasta la interfaz de usuario.
+						He trabajado con tecnologías como Laravel, Django,
+						Astro, Node.js y Spring Boot, además de contar con
+						conocimientos en Java, PHP y Python. Para el desarrollo
+						frontend utilizo herramientas modernas como Tailwind
+						CSS, priorizando interfaces limpias, funcionales y
+						responsivas.
+					</p>
+					<p
+						class="text-base sm:text-xl opacity-80 text-wrap max-w-full"
+					>
+						Me considero una persona responsable, curiosa y
+						orientada a la resolución de problemas. Disfruto
+						aprender nuevas tecnologías, enfrentar desafíos técnicos
+						y mejorar continuamente la calidad de mi código. Valoro
+						el trabajo en equipo, la buena comunicación y la
+						organización, ya que creo que son claves para el éxito
+						de cualquier proyecto. Mi objetivo es aportar soluciones
+						eficientes y seguir creciendo tanto a nivel profesional
+						como personal dentro del mundo del desarrollo.
+					</p>
 				</nav>
 			</SectionContainer>
 		</section>

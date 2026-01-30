@@ -1,0 +1,34 @@
+---
+import ProyectosItems from "./ProyectosItems.astro";
+
+interface Proyecto {
+    title: string;
+    description: string;
+    link?: string;
+    imageUrl: string;
+}
+
+const PROYECTOS: Proyecto[] = [
+    {
+        title: "EntKeeper - Addon para Juegos",
+        description: "Addon para Minecraft que introduce criaturas. Modelado por mi con BlockBench y programado para ser funcional en Minecraft Java.",
+        link: "https://github.com/JrNiRos/addon-javamc1",
+        imageUrl: "/images/proyectos/entkeeper.png"
+    },
+    {
+        title: "CubeForge",
+        description: "Plataforma web multivendedor para compra y venta de Addons para juegos. Construida con Laravel 12 y Tailwind CSS, ofrece una experiencia de usuario fluida y segura.",
+        imageUrl: "/images/proyectos/CubeForge.jpg"
+    },
+];
+---
+
+<ol class="relative border-s border-default">
+    {
+        PROYECTOS.map((proyectos) => (
+            <li class="mb-10 ms-4">
+                <ProyectosItems {...proyectos} />
+            </li>
+        ))
+    }
+</ol>
